@@ -96,6 +96,8 @@ export default {
 </script>
 
 <template>
+  <a href="#main" class="skip-to-main">Skip to main</a>
+
   <Navigation
     @showHomepageContent="showHomepageContent()"
     @showAboutContent="showAboutContent()"
@@ -123,6 +125,22 @@ export default {
 </template>
 
 <style lang="scss">
+.skip-to-main {
+  position: absolute;
+  left: 9999px;
+
+  &:focus {
+    position: fixed;
+    top: 20px;
+    left: 40%;
+    display: block;
+    background: #efba70;
+    color: #1c3344;
+    z-index: 99;
+    padding: 10px 55px;
+  }
+}
+
 main {
   background: linear-gradient(
     90deg,

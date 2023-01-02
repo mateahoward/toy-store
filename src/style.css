@@ -5,6 +5,10 @@
   font-weight: 400;
 }
 
+*:focus {
+  outline: 5px solid #efba70 !important;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
