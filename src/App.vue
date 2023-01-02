@@ -126,7 +126,7 @@ export default {
 
 <style lang="scss">
 .skip-to-main {
-  position: absolute;
+  position: fixed;
   left: 9999px;
 
   &:focus {
@@ -215,6 +215,9 @@ footer {
       width: 100%;
       height: 500px;
     }
+  }
+  .skip-to-main {
+    display: none;
   }
 }
 </style>
